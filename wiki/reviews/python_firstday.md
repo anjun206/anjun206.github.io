@@ -88,7 +88,8 @@ a, b, c = map(int, input().split())
 
 ## 예시
 <br>
-### 1. 리스트로 만들기
+
+### 리스트로 만들기
 ```py
 nums = list(map(int, input().split()))
 print(nums)
@@ -96,7 +97,7 @@ print(nums)
 - 입력 : `10 20 30`
 - 출력 : `[10, 20, 30]`
 
-### 2. 소수로 바꾸기
+### 소수로 바꾸기
 ```py
 scores = list(map(float, input().split()))
 print(scores)
@@ -104,7 +105,7 @@ print(scores)
 - 입력 : `1.5 3.7 8.2`
 - 출력 : `[1.5, 3.7, 8.2]`
 - 
-### 3. 문자열 대문자로 바꾸기
+### 문자열 대문자로 바꾸기
 ```py
 words = list(map(str.upper, input().split()))
 print(words)
