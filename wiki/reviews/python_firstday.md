@@ -1,4 +1,4 @@
-# 1. print()
+# print()
 소괄호안의 정보를 출력한다.
 
 ``` py
@@ -11,7 +11,7 @@ print(Hello World!)
 # 출력 : Hello world!
 ```
 <br>
-### 1 - 1. 추가 정보 f-string
+## 추가 정보 f-string
 `print(f's : {s}')`
 문자열 안에 **중괄호 {}**를 쓰면
 그 안에 변수값이 자동으로 들어감
@@ -32,7 +32,7 @@ ___
 <br>
 <br>
 
-# 2. input()
+# input()
 소괄호 안의 정보를 출력한다.
 
 ```py
@@ -47,7 +47,7 @@ print("안녕하세요,", name)
 ```
 `input()`으로 받는 값은 **항상 문자열**이기에 숫자로 쓰려면 변환해야함
 
-## 2 - 1. input() + f-string
+## input() + f-string
 input도 f-string과 자주 사용
 ```py
 # python
@@ -55,7 +55,7 @@ input도 f-string과 자주 사용
 age = input(f"나이를 입력하세요: ")
 print(f'당신의 나이는 {age}살입니다.')
 ```
-# 3. map()
+# map()
 - `map()`은 여러개의 값을 한번에 같은 방식으로 변환할때 쓰는 함수
 - **기본 형태 :**
 ```py
@@ -80,14 +80,15 @@ a, b, c = map(int, input().split())
 ```
 한번에 간단히 변환 가능하다!
 
-## 3 - 1. 작동 방식
+## 작동 방식
 - `input().split()` => `['1', '2', '3']` (문자열들의 리스트)
 - `map(int, ['1', '2', '3',])` => `[1, 2, 3]` (정수로 변환)
 - 변수 여러 개에 동시 할당 혹은
 - `list()`로 감싸서 리스트로 만들 수도 있음
 
-## 3 - 2. 예시
-#### 1. 리스트로 만들기
+## 예시
+<br>
+### 1. 리스트로 만들기
 ```py
 nums = list(map(int, input().split()))
 print(nums)
@@ -95,7 +96,7 @@ print(nums)
 - 입력 : `10 20 30`
 - 출력 : `[10, 20, 30]`
 
-#### 2. 소수로 바꾸기
+### 2. 소수로 바꾸기
 ```py
 scores = list(map(float, input().split()))
 print(scores)
@@ -103,7 +104,7 @@ print(scores)
 - 입력 : `1.5 3.7 8.2`
 - 출력 : `[1.5, 3.7, 8.2]`
 - 
-#### 3. 문자열 대문자로 바꾸기
+### 3. 문자열 대문자로 바꾸기
 ```py
 words = list(map(str.upper, input().split()))
 print(words)
