@@ -12,6 +12,7 @@
 - [위키 소개](about.md)
 - [복습 목록](review.md)
 - [정글 속 사유](thinking.md)
+- [TIL](TILs.md)
 
 ---
 
