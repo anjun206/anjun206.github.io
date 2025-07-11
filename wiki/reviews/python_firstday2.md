@@ -26,7 +26,7 @@ for 변수 in 반복가능한값:
     # 반복할 코드
 ```
 
-### 예시
+## 예시
 ```py
 for i in range(5):
     print(i)
