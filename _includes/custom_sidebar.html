@@ -1,19 +1,33 @@
 <!-- _includes/custom_sidebar.html -->
-<div class="custom-sidebar-section">
-  <h5>메뉴</h5>
-  <ul>
-    <li><a href="/wiki/main_page">메인</a></li>
-    <li><a href="/wiki/TILs">TIL</a></li>
-    <li><a href="/wiki/review">복습 목록</a></li>
-    <li><a href="/wiki/thinking">정글 속 사유</a></li>
+<div class="custom-sidebar-section" style="font-size: 1em;">
+  <ul style="list-style: none; padding-left: 0; margin-bottom: 6px;">
+    <li style="display: flex; align-items: center;">
+      <a href="/wiki/main_page" style="flex:1;">메인</a>
+    </li>
+    <li style="display: flex; align-items: center;">
+      <a href="/wiki/TILs" style="flex:1;">TIL</a>
+    </li>
+    <li style="display: flex; align-items: center;">
+      <a href="/wiki/review" style="flex:1;">복습 목록</a>
+    </li>
+    <li style="display: flex; align-items: center;">
+      <a href="/wiki/thinking" style="flex:1;">정글 속 사유</a>
+    </li>
+    {% if site.disable_edit != true %}
+      <li style="display: flex; align-items: center; margin-top: 3px;">
+        <a href="{{ site.github.repository_url }}/edit/{{ site.git_branch }}/_includes/custom_sidebar.html"
+           class="wiki-tool-button" style="font-size:0.9em; color: #888; margin-left: 2px;">
+          메뉴(편집)
+        </a>
+      </li>
+    {% endif %}
   </ul>
   {% if site.disable_edit != true %}
-  <!-- edit 버튼(현재 페이지 기준) -->
-  <div style="margin-top: 10px;">
-    <a href="{{ site.github.repository_url }}/edit/{{ site.git_branch }}/wiki/{{ page.name }}" 
-       class="wiki-tool-button">
-       편집
-    </a>
-  </div>
+    <div style="margin-top: 6px;">
+      <a href="{{ site.github.repository_url }}/edit/{{ site.git_branch }}/wiki/{{ page.name }}"
+         class="wiki-tool-button" style="font-size:0.93em; color: #888;">
+        현재 문서 편집
+      </a>
+    </div>
   {% endif %}
 </div>
