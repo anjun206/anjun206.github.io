@@ -1,25 +1,25 @@
 <!-- _includes/custom_sidebar.html -->
 <div class="custom-sidebar-section" style="font-size: 1em;">
   <ul style="list-style: none; padding-left: 0; margin-bottom: 6px;">
-    <li style="display: flex; align-items: center;">
-      <a href="/wiki/main_page" style="flex:1;">메인</a>
-    </li>
-    <li style="display: flex; align-items: center;">
-      <a href="/wiki/TILs" style="flex:1;">TIL</a>
-    </li>
-    <li style="display: flex; align-items: center;">
-      <a href="/wiki/review" style="flex:1;">복습 목록</a>
-    </li>
-    <li style="display: flex; align-items: center;">
-      <a href="/wiki/thinking" style="flex:1;">정글 속 사유</a>
-    </li>
+  </li>
     {% if site.disable_edit != true %}
       <li style="display: flex; align-items: center; margin-top: 3px;">
         <a href="{{ site.github.repository_url }}/edit/{{ site.git_branch }}/_includes/custom_sidebar.html"
            class="wiki-tool-button" style="font-size:0.9em; color: #888; margin-left: 2px;">
           메뉴(편집)
         </a>
-      </li>
+  </li>
+    <li style="display: flex; align-items: center;">
+      <a href="main_page" style="flex:1;">메인</a>
+    </li>
+    <li style="display: flex; align-items: center;">
+      <a href="TILs" style="flex:1;">TIL</a>
+    </li>
+    <li style="display: flex; align-items: center;">
+      <a href="/review" style="flex:1;">복습 목록</a>
+    </li>
+    <li style="display: flex; align-items: center;">
+      <a href="/thinking" style="flex:1;">정글 속 사유</a>
     {% endif %}
   </ul>
   {% if site.disable_edit != true %}
