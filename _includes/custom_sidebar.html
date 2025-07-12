@@ -1,33 +1,36 @@
 <!-- _includes/custom_sidebar.html -->
-<div class="custom-sidebar-section" style="font-size: 1em;">
-  <ul style="list-style: none; padding-left: 0; margin-bottom: 6px;">
-  </li>
+<div class="custom-sidebar-section" style="font-size:1em;">
     {% if site.disable_edit != true %}
-      <li style="display: flex; align-items: center; margin-top: 3px;">
+    <div style="margin-bottom: 8px;">
         <a href="{{ site.github.repository_url }}/edit/{{ site.git_branch }}/_includes/custom_sidebar.html"
-           class="wiki-tool-button" style="font-size:0.9em; color: #888; margin-left: 2px;">
+           class="wiki-tool-button"
+           style="font-weight:bold; font-size:1.06em; color:#555;">
           메뉴(편집)
         </a>
-  </li>
-    <li style="display: flex; align-items: center;">
-      <a href="main_page" style="flex:1;">메인</a>
-    </li>
-    <li style="display: flex; align-items: center;">
-      <a href="TILs" style="flex:1;">TIL</a>
-    </li>
-    <li style="display: flex; align-items: center;">
-      <a href="/review" style="flex:1;">복습 목록</a>
-    </li>
-    <li style="display: flex; align-items: center;">
-      <a href="/thinking" style="flex:1;">정글 속 사유</a>
-    {% endif %}
-  </ul>
-  {% if site.disable_edit != true %}
-    <div style="margin-top: 6px;">
-      <a href="{{ site.github.repository_url }}/edit/{{ site.git_branch }}/wiki/{{ page.name }}"
-         class="wiki-tool-button" style="font-size:0.93em; color: #888;">
-        현재 문서 편집
-      </a>
     </div>
-  {% endif %}
+    {% endif %}
+
+    <ul class="page-list" style="list-style:none; padding-left:0; margin-bottom:0;">
+        <li class="page-list-item">
+            <a href="main_page">메인</a>
+        </li>
+        <li class="page-list-item">
+            <a href="TILs">TIL</a>
+        </li>
+        <li class="page-list-item">
+            <a href="review">복습 목록</a>
+        </li>
+        <li class="page-list-item">
+            <a href="thinking">정글 속 사유</a>
+        </li>
+    </ul>
+    {% if site.disable_edit != true %}
+    <div style="margin-top: 12px;">
+        <a href="{{ site.github.repository_url }}/edit/{{ site.git_branch }}/wiki/{{ page.name }}"
+           class="wiki-tool-button"
+           style="font-size:0.95em; color:#888;">
+          현재 문서 편집
+        </a>
+    </div>
+    {% endif %}
 </div>
