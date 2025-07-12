@@ -1,18 +1,18 @@
 <!-- _includes/custom_sidebar.html -->
 <div class="custom-sidebar-section">
-  <h3>메뉴</h3>
+  <h5>메뉴</h5>
   <ul>
-    <li><a href="/wiki/main_page.md">메인</a></li>
-    <li><a href="/wiki/TILs.md">TIL</a></li>
-    <li><a href="/wiki/review.md">복습 목록</a></li>
-    <li><a href="/wiki/thinking.md">정글 속 사유</a></li>
+    <li><a href="/main_page.md">메인</a></li>
+    <li><a href="/TILs.md">TIL</a></li>
+    <li><a href="/review.md">복습 목록</a></li>
+    <li><a href="/thinking.md">정글 속 사유</a></li>
   </ul>
   {% if site.disable_edit != true %}
   <!-- edit 버튼(현재 페이지 기준) -->
   <div style="margin-top: 10px;">
     <a href="{{ site.github.repository_url }}/edit/{{ site.git_branch }}/wiki/{{ page.name }}" 
        class="wiki-tool-button">
-       메뉴 편집
+       편집
     </a>
   </div>
   {% endif %}
