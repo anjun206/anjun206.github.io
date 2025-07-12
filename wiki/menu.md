@@ -1,4 +1,4 @@
-- [메인](/wiki/main_page)
-- [TIL](/wiki/TILs)
-- [복습 목록](/wiki/review)
-- [정글 속 사유](/wiki/thinking)
+- [메인](/main_page)
+- [TIL](/TILs)
+- [복습 목록](/review)
+- [정글 속 사유](/thinking)
