@@ -1,36 +1,19 @@
-<!-- _includes/custom_sidebar.html -->
 <div class="custom-sidebar-section" style="font-size:1em;">
-    {% if site.disable_edit != true %}
-    <div style="margin-bottom: 8px;">
-        <a href="{{ site.github.repository_url }}/edit/{{ site.git_branch }}/_includes/custom_sidebar.html"
-           class="wiki-tool-button"
-           style="font-size:1em; color:#666; font-weight:normal; padding:0;">
-          메뉴 (편집):
+  {% assign menu_page = site.pages | where: "name", "Menu.md" | first %}
+  {% if menu_page %}
+    <div style="margin-bottom: 7px;">
+      <span style="color:#222;">메뉴</span>
+      {% if site.disable_edit != true %}
+        <a href="{{ site.github.repository_url }}/edit/{{ site.git_branch }}/wiki/Menu.md"
+           style="color:#1976d2; text-decoration:underline; font-size:1em; font-weight:normal; margin-left:3px;">
+          (편집)
         </a>
+      {% endif %}
     </div>
-    {% endif %}
-
-    <ul class="page-list" style="list-style:none; padding-left:0; margin-bottom:0;">
-        <li class="page-list-item">
-            <a href="main_page">메인</a>
-        </li>
-        <li class="page-list-item">
-            <a href="TILs">TIL</a>
-        </li>
-        <li class="page-list-item">
-            <a href="review">복습 목록</a>
-        </li>
-        <li class="page-list-item">
-            <a href="thinking">정글 속 사유</a>
-        </li>
-    </ul>
-    {% if site.disable_edit != true %}
-    <div style="margin-top: 12px;">
-        <a href="{{ site.github.repository_url }}/edit/{{ site.git_branch }}/wiki/{{ page.name }}"
-           class="wiki-tool-button"
-           style="font-size:0.95em; color:#888;">
-          현재 문서 편집
-        </a>
+    <div class="sidebar-markdown-list" style="line-height:1.7;">
+      {{ menu_page.content | markdownify }}
     </div>
-    {% endif %}
+  {% else %}
+    <div style="color:#888;">Menu.md 파일이 없습니다.</div>
+  {% endif %}
 </div>
