@@ -3,3 +3,5 @@
  - [7월 11일 DLC 2](learn/TIL_0711++.md)
 
 [7월 12일 TIL](learn/TIL_0712.md)
+
+[7월 14일 TIL](learn/TIL_0714.md)
