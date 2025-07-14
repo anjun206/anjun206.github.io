@@ -4,6 +4,10 @@
 오늘[^2]은 각주[^3] 넣는법[^4]을 알아냈다.<br><br>
 VS[^5]의 미리보기[^6]로는 확인[^7]하기 어렵다[^8]는게 흠[^9]이다.<br><br>
 아무튼 이제[^10] 좀 더 위키[^11]다워 졌다.<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
 
 ---
 [^1]: 원피스의 육식 기술
@@ -27,3 +31,13 @@ VS[^5]의 미리보기[^6]로는 확인[^7]하기 어렵다[^8]는게 흠[^9]이
 [^10]: 바로 이때. 지나간 때와 단절된 느낌을 준다
 
 [^11]: 웹 브라우저에서 간단한 마크업 언어를 이용해 공동 문서를 작성할 수 있고, 사용자들이 내용을 추가할 수 있는 웹 페이지 모음
+
+
+<script src="https://utteranc.es/client.js"
+        repo="anjun206/anjun206.github.io"
+        issue-term="pathname"
+        label="💬 utterances"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
