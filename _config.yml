@@ -110,6 +110,7 @@ plugins:
   - jekyll-relative-links
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-footnotes
   - jekyll-titles-from-headings
   - jemoji
 
