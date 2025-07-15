@@ -15,11 +15,11 @@ ___
 - [공간 복잡도 (Space Complexity)](reviews/week1_word/word3.md#공간-복잡도-space-complexity)<br>
 ___
 
-- [정렬 ()](reviews/week1_word/word4.md)
+- [정렬 (Sorting)](reviews/week1_word/word4.md)
 <br>
 ___
 
-- [완전탐색 ()](reviews/week1_word/word5.md)
+- [완전탐색 (Brute Force)](reviews/week1_word/word5.md)
 <br>
 ___
 
