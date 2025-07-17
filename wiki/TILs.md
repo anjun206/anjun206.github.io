@@ -15,3 +15,6 @@
 
 [7월 16일 TIL](learn/TIL_0716.md)
 - [7월 16일 DLC 1 : return은 웃고있다](learn/TIL_0716+.md)
+
+[7월 17일 TIL](learn/TIL_0717.md)
+- [7월 17일 DLC 1 : *교내* 초절정 미소녀를 다루는 법](learn/TIL_0717+.md)
