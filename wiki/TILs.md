@@ -11,4 +11,7 @@
 - [7월 14일 DLC 4 : 왕 그리고 여왕, 여왕, 여왕...<br> 마침내 여왕](learn/TIL_0714++++.md)
 
 [7월 15일 TIL](learn/TIL_0715.md)
-- [7월 15일 DLC 1 : 재귀의 핵심](leanr/TIL_0715+.md)
+- [7월 15일 DLC 1 : 재귀의 핵심](learn/TIL_0715+.md)
+
+[7월 16일 TIL](learn/TIL_0716.md)
+- [7월 16일 DLC 1 : return은 웃고있다](learn/TIL_0716+.md)
