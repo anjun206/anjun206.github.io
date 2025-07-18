@@ -47,6 +47,20 @@ stack.append(2)
 print(stack.pop())  # pop, 출력: 2
 print(stack.pop())  # pop, 출력: 1
 ```
+<br><br><br>
+
+> 파이썬에서 list로 스택 비스무리하게 쓰는법
+
+|    스택 연산    | 파이썬 기본 함수/방법 |     비고    |
+| :---------: | :----------: | :-------: |
+|     push    |  `append(x)` |  맨 뒤에 추가  |
+|     pop     |    `pop()`   |  맨 뒤 꺼내기  |
+|  top(peek)  |    `[-1]`    |  맨 뒤 값 확인 |
+|     size    | `len(stack)` |           |
+| empty check |  `not stack` | 빈 스택 True |
+|    clear    |   `clear()`  |   전체 비우기  |
+
+
 # 큐 (Queue)
 ## 개념
 - 데이터를 **줄세우는 구조**
