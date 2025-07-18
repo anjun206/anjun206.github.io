@@ -19,3 +19,7 @@
 [7월 17일 TIL](learn/TIL_0717.md)
 - [7월 17일 DLC 1 : *교내* 초절정 미소녀를 다루는 법](learn/TIL_0717+.md)
 - [7월 17일 DLC 2 : 덱에서 원하는 카드를 뽑는법.markdown](learn/TIL_0717++.md)
+
+
+[7월 18일 TIL](learn/TIL_0718.md)
+- [7월 16일 DLC 1 : 스테이지에서 강사와 함께.avi](learn/TIL_0718+.md)
