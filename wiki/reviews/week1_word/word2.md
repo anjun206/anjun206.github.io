@@ -56,6 +56,7 @@ print(factorial(5))  # 120 출력
 ```
 <br>
 
+
 ### 피보나치 수열
 ```py
 def fib(n):
@@ -67,6 +68,11 @@ print(fib(5))  # 5 출력
 ```
 <br>
 <br>
+
+
+[아직도 이해가 안될 경우 클릭!](#재귀함수-recursion)
+
+<br><br>
 
 ____
 
