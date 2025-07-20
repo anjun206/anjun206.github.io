@@ -24,3 +24,8 @@
 [7월 18일 TIL](learn/TIL_0718.md)
 - [7월 18일 DLC 1 : 스테이지에서 강사와 함께.avi](learn/TIL_0718+.md)
 - [7월 18일 DLC 2 : 이분 탐색 기법엔 여러가지가 있네 하나는 흔한 기본 탐색이고... <br><br> ...더보기](learn/TIL_0718++.md)
+
+[7월 19일 TIL](learn/TIL_0719.md)
+- [7월 19일 DLC 1 : csapp 립버전](learn/TIL_0719+.md)
+
+[7월 20일 TIL](learn/TIL_0720.md)
