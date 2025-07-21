@@ -13,6 +13,15 @@
 - [배열, 문자열](reviews/week1_word/word1.md)
 - [반복문과 재귀함수](reviews/week1_word/word2.md)
 - [복잡도(BigO,시간,공간)](reviews/week1_word/word3.md)
-- 정렬
-- 완전탐색
-- 정수론
+- [정렬](reviews/week1_word/word4.md)
+- [완전탐색](reviews/week1_word/word5.md)
+- [정수론](reviews/week1_word/word6.md)
+
+### 핵심단어 2주차
+- [이분탐색](reviews/week_2word/binary_search.md)
+- [분할 정복](learn/TIL_0719.md#분할-정복)
+- [스택](reviews/week1_word/word_stack.md#스택-stack)
+- [큐](reviews/week1_word/word_stack.md#큐-queue)
+- [우선순위 큐](reviews/week_2word/priority_queue.md)
+- [Likned List]
+- [해시테이블]
