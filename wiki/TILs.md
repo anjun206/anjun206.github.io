@@ -29,3 +29,6 @@
 - [7월 19일 DLC 1 : csapp 립버전](learn/TIL_0719+.md)
 
 [7월 20일 TIL](learn/TIL_0720.md)
+
+[7월 21일 TIL](learn/TIL_0721.md)
+- [7월 21일 DLC 1 : csapp 2.1 립버전 다운로드 csapp 2.1 립버전 있을 것 같았다 csapp 2.1 립버전...](learn/TIL_0721+.md)
