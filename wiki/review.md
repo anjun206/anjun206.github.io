@@ -23,5 +23,5 @@
 - [스택](reviews/week1_word/word_stack.md#스택-stack)
 - [큐](reviews/week1_word/word_stack.md#큐-queue)
 - [우선순위 큐](reviews/week_2word/priority_queue.md)
-- [Likned List]
-- [해시테이블]
+- [Likned List](reviews/week_2word/linked_list.md)
+- [해시테이블](reviews/week_2word/hashtable.md)
