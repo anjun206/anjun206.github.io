@@ -8,19 +8,23 @@
 ___
 
 - [반복문과 재귀함수](reviews/week1_word/word2.md)<br>
+
 ___
 - [Big O](reviews/week1_word/word3.md#big-o-표기법)<br>
 
 - [시간 복잡도 (Time Complexity)](reviews/week1_word/word3.md#시간-복잡도-time-complexity)<br>
 - [공간 복잡도 (Space Complexity)](reviews/week1_word/word3.md#공간-복잡도-space-complexity)<br>
+
 ___
 
 - [정렬 (Sorting)](reviews/week1_word/word4.md)
 <br>
+
 ___
 
 - [완전탐색 (Brute Force)](reviews/week1_word/word5.md)
 <br>
+
 ___
 
 - [정수론 ()](reviews/week1_word/word6.md)
