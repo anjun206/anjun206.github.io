@@ -30,13 +30,12 @@ ___
 
 ## 1주차 flc
 
-- [인덱스 (index)](reviews/week1_word/word_index.md#인덱스-index)<br>
-
-- [스택 (Stack)](reviews/week1_word/word_stack.md#스택-stack)<br>
-- [큐 [Queue]](reviews/week1_word/word_stack.md#큐-queue)<br>
-- [맵, 필터, 리듀스 [map, filter, reduce]](reviews/function_word/map,%20filter,%20reduce.md)
+- [인덱스 (index)](reviews/week1_word/word_index.md#인덱스-index)<br><br>
+- [스택 (Stack)](reviews/week1_word/word_stack.md#스택-stack)<br><br>
+- [큐 [Queue]](reviews/week1_word/word_stack.md#큐-queue)<br><br>
+- [맵, 필터, 리듀스 [map, filter, reduce]](reviews/function_word/map,%20filter,%20reduce.md)<br><br>
 - [함수 타입 변환 [int, str, float]](reviews/function_word/python_type.md)
-
+<br><br>
 ___
 
 <br>
