@@ -45,9 +45,9 @@ ___
 # 2주차
 
 - [break](reviews/function_word/break,%20continue,%20return,%20exit,%20pass.md#break)
-
 - [continue](reviews/function_word/break,%20continue,%20return,%20exit,%20pass.md#continue)
 - [return](reviews/function_word/break,%20continue,%20return,%20exit,%20pass.md#return)
 - [exit](reviews/function_word/break,%20continue,%20return,%20exit,%20pass.md#exit)
 - [pass](reviews/function_word/break,%20continue,%20return,%20exit,%20pass.md#pass)
+
 ___
