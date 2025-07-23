@@ -82,3 +82,5 @@
 - [공식 문서: map](https://docs.python.org/3/library/functions.html#map)
 - [공식 문서: filter](https://docs.python.org/3/library/functions.html#filter)
 - [공식 문서: functools.reduce](https://docs.python.org/3/library/functools.html#functools.reduce)
+
+<br>
