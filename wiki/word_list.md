@@ -37,7 +37,7 @@ ___
 - [인덱스 (index)](reviews/week1_word/word_index.md#인덱스-index)<br><br>
 - [스택 (Stack)](reviews/week1_word/word_stack.md#스택-stack)<br><br>
 - [큐 [Queue]](reviews/week1_word/word_stack.md#큐-queue)<br><br>
-- [맵, 필터, 리듀스 [map, filter, reduce]](reviews/function_word/map,%20filter,%20reduce.md)<br><br>
+- [맵, 필터, 리듀스 [map, filter, reduce]](reviews/function_word/map-filter-reduce.md)<br><br>
 - [함수 타입 변환 [int, str, float]](reviews/function_word/python_type.md)
 <br><br>
 ___
@@ -47,10 +47,21 @@ ___
 
 # 2주차
 
-- [break](reviews/function_word/break,%20continue,%20return,%20exit,%20pass.md#break)
-- [continue](reviews/function_word/break,%20continue,%20return,%20exit,%20pass.md#continue)
-- [return](reviews/function_word/break,%20continue,%20return,%20exit,%20pass.md#return)
-- [exit](reviews/function_word/break,%20continue,%20return,%20exit,%20pass.md#exit)
-- [pass](reviews/function_word/break,%20continue,%20return,%20exit,%20pass.md#pass)
+- [이분 탐색](reviews/week_2word/binary_search.md)
+
+- [해시테이블](reviews/week_2word/hashtable.md)
+
+- [연결리스트](reviews/week_2word/linked_list.md)
+
+- [우선탐색](reviews/week_2word/priority_queue.md)
+
+
+## 2주차 dlc
+
+- [break](reviews/function_word/break-continue-return-exit-pass.md#break)
+- [continue](reviews/function_word/break-continue-return-exit-pass.md#continue)
+- [return](reviews/function_word/break-continue-return-exit-pass.md#return)
+- [exit](reviews/function_word/break-continue-return-exit-pass.md#exit)
+- [pass](reviews/function_word/break-continue-return-exit-pass.md#pass)
 
 ___
