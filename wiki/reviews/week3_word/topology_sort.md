@@ -33,66 +33,74 @@ C → D
 **진입 차수 방식(Kahn's Algorithm)** 과 **DFS 기반 방식** 말이다
 
 ### 진입 차수 방식
-```js
-function TOPOLOGICAL_SORT(graph):
-    indegree = 배열[노드 수] ← 0으로 초기화
+```py
+from collections import deque
 
-    // 1. 진입 차수 계산
-    for each node in graph:
-        for each neighbor of node:
-            indegree[neighbor] += 1
+def topological_sort_kahn(graph, n):
+    indegree = [0] * n  # 각 노드의 진입 차수 저장 배열
 
-    queue = 빈 큐
-    // 2. 진입 차수 0인 노드 큐에 삽입
-    for each node in graph:
-        if indegree[node] == 0:
-            queue.enqueue(node)
+    # 모든 노드의 진입 차수 계산
+    for u in range(n):
+        for v in graph[u]:
+            indegree[v] += 1
 
-    result = 빈 리스트
+    queue = deque()  # 진입 차수 0인 노드를 담을 큐
+    result = []      # 최종 위상 정렬 결과
 
-    // 3. 위상 정렬
-    while queue is not empty:
-        node = queue.dequeue()
-        result.append(node)
+    # 처음부터 진입 차수가 0인 노드들을 큐에 넣음
+    for i in range(n):
+        if indegree[i] == 0:
+            queue.append(i)
 
-        for each neighbor of node:
+    # 위상 정렬 시작
+    while queue:
+        node = queue.popleft()   # 진입 차수 0인 노드를 꺼냄
+        result.append(node)      # 정렬 결과에 추가
+
+        # 꺼낸 노드와 연결된 노드들의 진입 차수 감소
+        for neighbor in graph[node]:
             indegree[neighbor] -= 1
-            if indegree[neighbor] == 0:
-                queue.enqueue(neighbor)
+            if indegree[neighbor] == 0:  # 새롭게 진입 차수 0이 된 노드는 큐에 추가
+                queue.append(neighbor)
 
-    // 4. 정렬된 결과 반환 (사이클 존재 시 처리)
-    if result.size == 전체 노드 수:
+    # 사이클이 없다면 모든 노드가 정렬됨
+    if len(result) == n:
         return result
     else:
-        return "사이클 존재. 위상 정렬 불가"
+        return []  # 사이클이 있어 위상 정렬 불가능
 ```
+<br>
 
-
+[추가 내용](/wiki/learn/TIL_0725+.md#진입-차수-방식)
+<br><br>
 
 ### DFS 방식
-```js
-visited = 배열[노드 수] ← false로 초기화
-result = 빈 스택
+```py
+def topological_sort_dfs(graph, n):
+    visited = [False] * n  # 방문 여부를 저장하는 배열
+    result = []            # 위상 정렬 결과 (스택처럼 사용)
 
-function DFS(node):
-    visited[node] = true
+    # 재귀적으로 DFS 수행
+    def dfs(node):
+        visited[node] = True
+        for neighbor in graph[node]:
+            if not visited[neighbor]:
+                dfs(neighbor)  # 자식 노드 먼저 방문
+        result.append(node)  # 모든 자식 방문 후 현재 노드 저장
 
-    for each neighbor of node:
-        if visited[neighbor] == false:
-            DFS(neighbor)
+    # 모든 노드에 대해 DFS 수행 (비연결 그래프 고려)
+    for i in range(n):
+        if not visited[i]:
+            dfs(i)
 
-    result.push(node)
-
-function TOPOLOGICAL_SORT(graph):
-    for each node in graph:
-        if visited[node] == false:
-            DFS(node)
-
-    // 스택에서 하나씩 꺼낸 순서가 위상 정렬
-    while result is not empty:
-        print(result.pop())
+    result.reverse()  # 역순으로 뒤집어 위상 정렬 순서 완성
+    return result
 ```
 
+<br>
+
+[추가 내용](/wiki/learn/TIL_0725+.md#dfs-기반-방식)
+<br><br>
 
 ## 비교
 

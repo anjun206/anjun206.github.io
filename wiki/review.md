@@ -1,3 +1,17 @@
+
+<br><br>
+
+ㅅㅂ 워드 리스트랑 다를게 없어서 여긴 유기하겠다
+
+[어드 리슈트](word_list.md)
+
+
+<br><br><br>
+
+
+
+
+
 [마크다운 문법 복습 1](reviews/markdown1.md)
 <br><br>
 [파이썬 문자 변환](reviews/function_word/python_type.md)

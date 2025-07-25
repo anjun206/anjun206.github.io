@@ -46,6 +46,9 @@
 [7월 24일 TIL](learn/TIL_0724.md)
 - [7월 24일 DLC 1 : 그래프 추가 업데이트](learn/TIL_0724+.md)
 
+[7월 25일 TIL](learn/TIL_0725.md)
+- [7월 25일 DLC 1 : 친해지길 바래 - 위상, 정렬 편](learn/TIL_0725+.md)
+
 
 
 
