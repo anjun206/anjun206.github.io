@@ -65,3 +65,25 @@ ___
 - [pass](reviews/function_word/break-continue-return-exit-pass.md#pass)
 
 ___
+
+
+# 3주차
+
+- 그래프
+
+    - [그래프의 요소](reviews/week3_word/graph_ele.md)
+
+    - [그래프의 종료](reviews/week3_word/graph_type.md)
+
+    - [그래프의 표현 방식](reviews/week3_word/graph_rend.md)
+
+___
+
+
+- [깊이 우선탐색 (DFS)](reviews/week3_word/BFS_DFS.md#dfs)
+
+- [넓이 우선탐색 (BFS)](reviews/week3_word/BFS_DFS.md#bfs)
+
+___
+
+- [위상정렬](reviews/week3_word/topology_sort.md)

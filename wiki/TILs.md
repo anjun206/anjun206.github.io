@@ -43,6 +43,21 @@
 - [7월 23일 DLC 1 : csapp 2.2 리부트](learn/TIL_0723+.md)
 - [7월 23일 DLC 2 : 오느른 키어드 정리 해밧따](learn/TIL_0723++.md)
 
+[7월 24일 TIL](learn/TIL_0724.md)
+- [7월 24일 DLC 1 : 그래프 추가 업데이트](learn/TIL_0724+.md)
+
+
+
+
+
+
+
+
+
+
+
+
+
 ___
 csapp
 - 1단원
