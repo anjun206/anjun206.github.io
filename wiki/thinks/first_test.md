@@ -17,4 +17,15 @@ gpt나 gemini같은 AI쓰다가 걸리면<br>
 어려움, 더 어려움, 더더 어려움 난이도 정도였다.<br><br>
 상이라고 못 풀 정도는 아니지만 하라고 우습지는 않은...<br><br>
 그 정도 난이도 였다.<br><br>
-다음에는 공부를 마~니 해서 조은 성적을 받고 십다~<~br>
+다음에는 공부를 마~니 해서 조은 성적을 받고 십다~<br>
+
+
+<br><br>
+<script src="https://utteranc.es/client.js"
+        repo="anjun206/anjun206.github.io"
+        issue-term="pathname"
+        label="💬 utterances"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>

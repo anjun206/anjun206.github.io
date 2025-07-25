@@ -25,3 +25,15 @@
 실외 온도차를 조심하자
 <br><br><br>
 여름이었다
+
+<br><br>
+___
+<br><br>
+<script src="https://utteranc.es/client.js"
+        repo="anjun206/anjun206.github.io"
+        issue-term="pathname"
+        label="💬 utterances"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>

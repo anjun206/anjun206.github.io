@@ -32,6 +32,10 @@ VS[^5]의 미리보기[^6]로는 확인[^7]하기 어렵다[^8]는게 흠[^9]이
 [^11]: 웹 브라우저에서 간단한 마크업 언어를 이용해 공동 문서를 작성할 수 있고, 사용자들이 내용을 추가할 수 있는 웹 페이지 모음
 
 
+
+<br><br>
+___
+<br><br>
 <script src="https://utteranc.es/client.js"
         repo="anjun206/anjun206.github.io"
         issue-term="pathname"
