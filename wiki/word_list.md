@@ -92,6 +92,16 @@ ___
 
 - [Trie](reviews/week3_word/Trie.md)
 
+___
+
+- [다익스트라 (Dijkstra)](reviews/week3_word/Dijkstra,Floyd.md#다익스트라-알고리즘)
+
+- [플로이드 와샬 (Floyd_Warshall)](reviews/week3_word/Dijkstra,Floyd.md#플로이드-와샬)
+
+    혹은 [플로이드 워샬](reviews/week3_word/Dijkstra,Floyd.md#플로이드-와샬)
+___
+
+- [최소 신장 트리 (min_spanning_tree)](reviews/week3_word/min_spanning.md)
 ## 3주차 dlc
 
 - [tree](reviews/week3_word/tree.md)
