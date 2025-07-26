@@ -102,6 +102,10 @@ ___
 ___
 
 - [최소 신장 트리 (min_spanning_tree)](reviews/week3_word/min_spanning.md)
+
+
 ## 3주차 dlc
 
-- [tree](reviews/week3_word/tree.md)
+- [tree 구조](reviews/week3_word/tree.md)
+
+- [다이나믹 프로그래밍 (Dynamic programming)](reviews/week3_word/dynamic_programming.md)

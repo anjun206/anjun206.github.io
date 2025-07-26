@@ -135,7 +135,7 @@ A → D = 2
 **모든** 정점 쌍 사이의 최단 거리를 구한다
 
 중간에 거쳐갈 수 있는 모든 정점을 하나씩 고려하며 갱신하는는 느낌's~<br>
-([Dynamic Programming]())
+([Dynamic Programming](dynamic_programming.md))
 
 핵심 아이디어는
 
