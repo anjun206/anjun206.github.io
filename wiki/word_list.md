@@ -27,7 +27,7 @@ ___
 
 ___
 
-- [정수론 ()](reviews/week1_word/word6.md)
+- [정수론 (number theory)](reviews/week1_word/word6.md)
 ___
 
 <br>
@@ -40,6 +40,7 @@ ___
 - [맵, 필터, 리듀스 [map, filter, reduce]](reviews/function_word/map-filter-reduce.md)<br><br>
 - [함수 타입 변환 [int, str, float]](reviews/function_word/python_type.md)
 <br><br>
+
 ___
 
 <br>
@@ -99,6 +100,7 @@ ___
 - [플로이드 와샬 (Floyd_Warshall)](reviews/week3_word/Dijkstra,Floyd.md#플로이드-와샬)
 
     혹은 [플로이드 워샬](reviews/week3_word/Dijkstra,Floyd.md#플로이드-와샬)
+    
 ___
 
 - [최소 신장 트리 (min_spanning_tree)](reviews/week3_word/min_spanning.md)
