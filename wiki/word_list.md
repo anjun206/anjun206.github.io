@@ -87,3 +87,11 @@ ___
 ___
 
 - [위상정렬](reviews/week3_word/topology_sort.md)
+
+___
+
+- [Trie](reviews/week3_word/Trie.md)
+
+## 3주차 dlc
+
+- [tree](reviews/week3_word/tree.md)
