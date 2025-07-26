@@ -167,5 +167,5 @@ class Trie:
             if ch not in node.children:      # 문자 없으면 False
                 return False
             node = node.children[ch]         # 다음 문자로 이동
-        return True                          # 접두사 존재하면 True
+        return True                          # 두사 존재하면 True
 ```
