@@ -6,9 +6,11 @@
 (따봉하는 개구리 짤)
 <br><br>
 
-[어드 리슈트](word_list.md)
+# [어드 리슈트](word_list.md)
 
 
+<br><br><br>
+<br><br><br>
 <br><br><br>
 
 
