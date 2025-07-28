@@ -106,6 +106,10 @@ ___
 
 - [최소 신장 트리 (min_spanning_tree)](reviews/week3_word/min_spanning.md)
 
+___
+
+- [B-tree](reviews/week3_word/B-tree.md)
+
 
 ## 3주차 dlc
 
