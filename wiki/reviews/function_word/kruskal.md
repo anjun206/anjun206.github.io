@@ -44,7 +44,7 @@
 
 <br>
 
-## 예제
+## 💠예제
 
 ### 🔸기본 정보
 
@@ -54,11 +54,15 @@
 간선 정보: (1-2, 3), (1-3, 1), (2-3, 2), (3-4, 4), (2-4, 5)
 ```
 
-### 🔹유니온 파인드
+<br>
+
+### 🔷 유니온 파인드
 
 싸이클 판별용으로 사용한다
 
-#### 🔹코드
+<br>
+
+#### 🔹유니온 파인드 코드
 ```py
 # 루트 노드를 찾는 함수 (경로 압축 포함)
 def find(parent, x):
@@ -76,7 +80,7 @@ def union(parent, a, b):
         parent[root_a] = root_b
 ```
 
-🔘 `find(paren, x)`
+🔘 `find(parent, x)`
 
 - 입력된 `x`의 **최상위 부모(루트 노드)** 를 찾아줌
 
@@ -93,3 +97,88 @@ def union(parent, a, b):
 - 두 집합의 루트를 비교해서 더 작은 쪽 루트가 부모가 되도록 연결
 
 > 같은 집합이라면 합치지 않음 → 싸이클 방지 핵심
+
+<br>
+
+___
+
+<br>
+
+### 🔶 크루스칼 알고리즘 본체
+
+모든 간선을 비용 기준으로 정렬한 후,
+
+싸이클이 생기지 않는 선에서 [MST](../week3_word/min_spanning.md)를 완성
+
+<br>
+
+#### 🔸간선 정렬 및 부모 배열 초기화
+
+```py
+edges.sort()
+paren = [i for i in ranve(V + 1)]
+```
+
+- 모든 간선을 가중치 기준으로 오름차순 정렬
+
+    - 가중치 낮은 것부터 선택할 준비
+
+- 그리디 알고리즘 핵심
+
+- 유니온 파인드를 위한 배열
+
+- `parent[x] = x` 모든 정점이 자기 자신이 루트
+
+<br>
+
+#### 최소 신장 트리 구성 루프
+
+```py
+for cost, a, b in edges:
+    if find(parent, a) != find(parent, b):
+        union(parent, a, b)
+        total_cost += cost
+        mst_edges.append((a, b, cost))
+```
+
+정렬된 간선들을 꺼내며 판단
+
+- `find(parent, a)` 와 `find(parent, b)`:
+    - **서로 다른 집합**에 있으면 싸이클이 생기지 않음 → **선택**
+
+- `union(...)`:
+    - 두 정점을 **같은 집합으로 합침** (트리에 연결)
+
+- `total_cost += cost`:
+    - 선택한 간선의 비용을 **총합에 누적**
+
+- `mst_edges.append(...)`:
+    - 어떤 간선이 MST에 포함됐는지 **기록**
+
+<br>
+
+___
+
+<br>
+
+### 코드
+
+```py
+# 1. 간선을 비용 기준으로 정렬
+edges.sort()
+
+# 2. 부모 배열 초기화 (유니온 파인드용)
+parent = [i for i in range(V + 1)]
+
+# MST 비용과 간선 저장할 변수
+total_cost = 0
+mst_edges = []
+
+# 3. 간선 하나씩 보며 MST 구성
+for cost, a, b in edges:
+    # 서로 다른 집합이면 (싸이클 안 생기면)
+    if find(parent, a) != find(parent, b):
+        union(parent, a, b)            # 집합 합치기
+        total_cost += cost             # 비용 누적
+        mst_edges.append((a, b, cost)) # 간선 저장
+```
