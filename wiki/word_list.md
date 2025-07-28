@@ -116,3 +116,7 @@ ___
 - [tree 구조](reviews/week3_word/tree.md)
 
 - [다이나믹 프로그래밍 (Dynamic programming)](reviews/week3_word/dynamic_programming.md)
+
+- [크루스칼 알고리즘](reviews/function_word/kruskal.md)
+
+- [유니온-파인드](reviews/function_word/kruskal.md#-유니온-파인드)

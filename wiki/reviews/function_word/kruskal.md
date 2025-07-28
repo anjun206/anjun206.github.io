@@ -164,21 +164,53 @@ ___
 ### 코드
 
 ```py
-# 1. 간선을 비용 기준으로 정렬
+# 1. 유니온-파인드 함수 정의
+def find(parent, x):
+    if parent[x] != x:
+        parent[x] = find(parent, parent[x])  # 경로 압축
+    return parent[x]
+
+def union(parent, a, b):
+    root_a = find(parent, a)
+    root_b = find(parent, b)
+    if root_a < root_b:
+        parent[root_b] = root_a
+    else:
+        parent[root_a] = root_b
+
+# 2. 정점, 간선 수 정의
+V = 4
+E = 5
+
+# 3. 간선 정보: (비용, 정점1, 정점2)
+edges = [
+    (3, 1, 2),
+    (1, 1, 3),
+    (2, 2, 3),
+    (4, 3, 4),
+    (5, 2, 4)
+]
+
+# 4. 간선 정렬 (가중치 오름차순)
 edges.sort()
 
-# 2. 부모 배열 초기화 (유니온 파인드용)
+# 5. 부모 배열 초기화 (1번부터 4번까지 정점)
 parent = [i for i in range(V + 1)]
 
-# MST 비용과 간선 저장할 변수
+# 6. 크루스칼 핵심 로직
 total_cost = 0
 mst_edges = []
 
-# 3. 간선 하나씩 보며 MST 구성
 for cost, a, b in edges:
-    # 서로 다른 집합이면 (싸이클 안 생기면)
     if find(parent, a) != find(parent, b):
-        union(parent, a, b)            # 집합 합치기
-        total_cost += cost             # 비용 누적
-        mst_edges.append((a, b, cost)) # 간선 저장
+        union(parent, a, b)
+        total_cost += cost
+        mst_edges.append((a, b, cost))
+
+# 7. 결과 출력
+print("MST 간선들:")
+for a, b, cost in mst_edges:
+    print(f"{a} - {b}, 비용: {cost}")
+print("총 비용:", total_cost)
+
 ```
