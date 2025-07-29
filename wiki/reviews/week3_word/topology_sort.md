@@ -36,38 +36,28 @@ C → D
 ```py
 from collections import deque
 
-def topological_sort_kahn(graph, n):
-    indegree = [0] * n  # 각 노드의 진입 차수 저장 배열
+indegree = [0] * (N + 1)
+graph = [[] for _ in range(N + 1)]
 
-    # 모든 노드의 진입 차수 계산
-    for u in range(n):
-        for v in graph[u]:
-            indegree[v] += 1
+# 그래프 및 진입 차수 초기화
+for u, v in edges:
+    graph[u].append(v)
+    indegree[v] += 1
 
-    queue = deque()  # 진입 차수 0인 노드를 담을 큐
-    result = []      # 최종 위상 정렬 결과
+# 진입 차수가 0인 노드 큐에 삽입
+queue = deque([i for i in range(1, N + 1) if indegree[i] == 0])
+result = []
 
-    # 처음부터 진입 차수가 0인 노드들을 큐에 넣음
-    for i in range(n):
-        if indegree[i] == 0:
-            queue.append(i)
+while queue:
+    cur = queue.popleft()
+    result.append(cur)
+    for neighbor in graph[cur]:
+        indegree[neighbor] -= 1
+        if indegree[neighbor] == 0:
+            queue.append(neighbor)
 
-    # 위상 정렬 시작
-    while queue:
-        node = queue.popleft()   # 진입 차수 0인 노드를 꺼냄
-        result.append(node)      # 정렬 결과에 추가
+print(result)
 
-        # 꺼낸 노드와 연결된 노드들의 진입 차수 감소
-        for neighbor in graph[node]:
-            indegree[neighbor] -= 1
-            if indegree[neighbor] == 0:  # 새롭게 진입 차수 0이 된 노드는 큐에 추가
-                queue.append(neighbor)
-
-    # 사이클이 없다면 모든 노드가 정렬됨
-    if len(result) == n:
-        return result
-    else:
-        return []  # 사이클이 있어 위상 정렬 불가능
 ```
 <br>
 
@@ -76,25 +66,23 @@ def topological_sort_kahn(graph, n):
 
 ### DFS 방식
 ```py
-def topological_sort_dfs(graph, n):
-    visited = [False] * n  # 방문 여부를 저장하는 배열
-    result = []            # 위상 정렬 결과 (스택처럼 사용)
+def dfs(node):
+    visited[node] = True
+    for neighbor in graph[node]:
+        if not visited[neighbor]:
+            dfs(neighbor)
+    result.append(node)  # 후위 순회처럼 나중에 추가
 
-    # 재귀적으로 DFS 수행
-    def dfs(node):
-        visited[node] = True
-        for neighbor in graph[node]:
-            if not visited[neighbor]:
-                dfs(neighbor)  # 자식 노드 먼저 방문
-        result.append(node)  # 모든 자식 방문 후 현재 노드 저장
+# 초기화
+visited = [False] * (N + 1)
+result = []
 
-    # 모든 노드에 대해 DFS 수행 (비연결 그래프 고려)
-    for i in range(n):
-        if not visited[i]:
-            dfs(i)
+for i in range(1, N + 1):
+    if not visited[i]:
+        dfs(i)
 
-    result.reverse()  # 역순으로 뒤집어 위상 정렬 순서 완성
-    return result
+result.reverse()  # 뒤집어서 위상 정렬 결과 도출
+print(result)
 ```
 
 <br>
