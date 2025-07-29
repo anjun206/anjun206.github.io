@@ -36,6 +36,6 @@
 🔽🔽🔽🔽🔽🔽🔽
 <br>
 
-[이민혁 업적 보러가기](https://namu.wiki/w/%EB%A7%81%ED%81%AC(%EC%A0%A4%EB%8B%A4%EC%9D%98%20%EC%A0%84%EC%84%A4%20%EC%8B%9C%EB%A6%AC%EC%A6%88))
+[이민혁 업적 보러가기](https://www.acmicpc.net/problem/3055)
 
 🔼🔼🔼🔼🔼🔼🔼
