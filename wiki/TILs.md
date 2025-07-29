@@ -53,7 +53,10 @@
 
 [7월 26일 TIL](learn/TIL_0726.md)
 
+[7월 28일 TIL](learn/TIL_0726.md)
 
+[7월 29일 TIL](learn/TIL_0725.md)
+- [7월 29일 DLC 1 : 게임이 가장 우월한 문화인 EU](learn/TIL_0725+.md)
 
 
 
