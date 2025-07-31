@@ -121,3 +121,11 @@ ___
 - [크루스칼 알고리즘](reviews/function_word/kruskal.md)
 
 - [유니온-파인드](reviews/function_word/kruskal.md#-유니온-파인드)
+
+<br>
+
+## 4주차
+
+- [다이나믹 프로그래밍](reviews/week4_word/DP.md)
+
+- [그리디](reviews/week4_word/greedy.md)

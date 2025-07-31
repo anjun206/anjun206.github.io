@@ -116,7 +116,7 @@ ___
 
 ```py
 edges.sort()
-paren = [i for i in ranve(V + 1)]
+parent = [i for i in range(V + 1)]
 ```
 
 - 모든 간선을 가중치 기준으로 오름차순 정렬

@@ -39,3 +39,14 @@
 [이민혁 업적 보러가기](https://www.acmicpc.net/problem/3055)
 
 🔼🔼🔼🔼🔼🔼🔼
+
+
+<br><br><br><br><br>
+<script src="https://utteranc.es/client.js"
+        repo="anjun206/anjun206.github.io"
+        issue-term="pathname"
+        label="💬 utterances"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
