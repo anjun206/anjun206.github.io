@@ -124,8 +124,16 @@ ___
 
 <br>
 
-## 4주차
+# 4주차
 
 - [다이나믹 프로그래밍](reviews/week4_word/DP.md)
 
 - [그리디](reviews/week4_word/greedy.md)
+
+- [LCS](reviews/week4_word/LCS.md)
+
+- [배낭 문제](reviews/week4_word/knapsack.md)
+
+## 4주차 dlc
+
+- [0-1 배낭 문제](reviews/week4_word/0-1.md)
