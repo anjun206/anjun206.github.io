@@ -7,8 +7,10 @@
 <br><br>
 연결된 리스트라는 뜻!
 <br><br><br>
-문제 해결!
-<br><br>
+
+![문제해결!](https://i.postimg.cc/v8h4HRWk/Drfc-OQp-UUAA4ozd.jpg)
+
+<br>
 <br><br>
 그치만<br><br>
 이대로 끝내면 아쉬우니
