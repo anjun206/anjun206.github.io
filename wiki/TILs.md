@@ -61,7 +61,9 @@
 [7월 30일 TIL](learn/TIL_0730.md)
 
 
+[8월 1일 TIL](learn/08_1/TIL_0801.md)
 
+- [8월 1일 DLC 1 :](learn/08_1/TIL_0801+.md)
 
 
 ___

@@ -3,8 +3,10 @@ LCS.
 <br><br><br>
 Longest Common Subsequence라는 뜻(meaning이라는 뜻)이다
 <br><br><br>
-음?
+...
 <br><br><br>
+음?
+<br><br><br><br>
 아.
 <br><br><br>
 이런... 실수로 영어가 튀어 나왔군요 my mistake~
@@ -53,6 +55,12 @@ Subsequence 대신 Substring을 사용한다
 부분 문자열과 달리 연속될 필요 없다
 
 LCS는 주로 [동적 계획법](DP.md)으로 자주 해결한다
+
+시간 복잡도는 $O(n * m)$다
+
+$n, m$ 문자열 $a,b$ 의 길이
+
+<br>
 
 ## 예시
 
