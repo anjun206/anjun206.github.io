@@ -10,6 +10,8 @@
 
 [8월 4일 TIL](learn/08_1/TIL_0804.md)
 
+[8월 5일 TIL](learn/08_1/TIL_0804.md)
+
 <br><br><br>
 
 

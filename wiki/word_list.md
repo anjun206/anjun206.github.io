@@ -139,3 +139,5 @@ ___
 ## 4주차 dlc
 
 - [0-1 배낭 문제](reviews/week4_word/0-1.md)
+
+- [비트 마스킹](reviews/week4_word/beat-masking.md)
