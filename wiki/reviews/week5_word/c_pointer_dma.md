@@ -13,7 +13,7 @@
 
 <br>
 
-## **&** (Address-of 연산자)
+## `&` (Address-of 연산자)
 
 **변수의 메모리 주소**를 가져옴
 
@@ -24,7 +24,7 @@ printf("%p\n", &a); // a의 주소 출력
 
 <br>
 
-## **\*** (Dereference / Indirection 연산자)
+## `*` (Dereference / Indirection 연산자)
 
 **포인터가 가리키는 주소의 값**에 접근
 
@@ -37,7 +37,7 @@ printf("%d\n", *p); // p가 가리키는 값(a) = 10
 
 <br>
 
-## &과 *의 관계 예제
+## `&`과 `*`의 관계 예제
 
 ```c
 int a = 100;
