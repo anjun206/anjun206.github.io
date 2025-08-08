@@ -141,3 +141,8 @@ ___
 - [0-1 배낭 문제](reviews/week4_word/0-1.md)
 
 - [비트 마스킹](reviews/week4_word/beat-masking.md)
+
+
+<br><br><br>
+
+# [다음달로](word_list2.md)

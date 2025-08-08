@@ -10,7 +10,16 @@
 
 [8월 4일 TIL](learn/08_1/TIL_0804.md)
 
-[8월 5일 TIL](learn/08_1/TIL_0804.md)
+[8월 5일 TIL](learn/08_1/TIL_0805.md)
+
+[8월 6일 TIL](learn/08_1/TIL_0806.md)
+
+- [8월 6일 DLC 1 : 줙같은 csapp와 15선](learn/08_1/TIL_0806+.md)
+
+[8월 7일 TIL](learn/08_1/TIL_0807.md)
+
+[8월 8일 TIL](learn/08_1/TIL_0808.md)
+
 
 <br><br><br>
 
