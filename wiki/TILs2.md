@@ -24,6 +24,7 @@
 
 [8월 10일 TIL](learn/08_1/TIL_0809.md)
 
+[8월 11일 TIL](learn/08_1/TIL_0811.md)
 
 <br><br><br>
 
