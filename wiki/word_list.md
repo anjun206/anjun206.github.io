@@ -134,7 +134,7 @@ ___
 
 - [배낭 문제](reviews/week4_word/knapsack.md)
 
-- [포인터와 포인터 연산자](../../reviews/week4_word/Pointer.md)
+- [포인터와 포인터 연산자](reviews/week4_word/Pointer.md)
 
 ## 4주차 dlc
 
