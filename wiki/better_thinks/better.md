@@ -7,3 +7,5 @@
 [인프랩 커리어 강연](inflab.md)
 
 [month1](month1.md)
+
+[C발 조심하세요](C_class1.md)
