@@ -28,6 +28,9 @@
 
 [8월 12일 TIL](learn/08_1/TIL_0812.md)
 
+[8월 13일 TIL](learn/08_1/TIL_0813.md)
+
+
 <br><br><br>
 
 
