@@ -30,9 +30,13 @@
 
 [8월 13일 TIL](learn/08_1/TIL_0813.md)
 
-[8월 13일 TIL](learn/08_1/TIL_0813.md)
+[8월 14일 TIL](learn/08_1/TIL_0814.md)
 
-- [8월 14일 TIL : C val S aekki app](learn/08_1/TIL_0813.md)
+- [8월 14일 DLC : C val S aekki app](learn/08_1/TIL_0814.md)
+
+[8월 15일 TIL](learn/08_1/TIL_0815.md)
+
+- [8월 15일 DLC : C hit](learn/08_1/TIL_0815+.md)
 
 <br><br><br>
 
@@ -87,3 +91,5 @@ csapp
     - [7.1](learn/08_1/TIL_0814+.md#71-컴파일러-드라이버)
     - [7.4](learn/08_1/TIL_0814+.md#74-재배치-가능-목적-파일)
     - [7.9](learn/08_1/TIL_0814+.md#79-실행-가능한-목적-파일-적개)
+- [8단원](learn/08_1/TIL_0815+.md)
+    - [8.1](learn/08_1/TIL_0815+.md#81-예외-상황)
