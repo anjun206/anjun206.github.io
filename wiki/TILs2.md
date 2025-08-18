@@ -40,6 +40,8 @@
 
 [8월 16일 TIL](learn/08_1/TIL_0816.md)
 
+[8월 18일 TIL](learn/08_1/TIL_0818.md)
+
 
 <br><br><br>
 
