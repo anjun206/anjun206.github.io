@@ -54,6 +54,7 @@
 ```c
 // 모리스 순회 (중위 순회 에디션)
 while (cur != t->nil) {
+    // cur 노드의 왼쪽 자식이 없을 경우 
     if (cur->left == t->nil) {
         // 각주 대신 cur 배열에 push하는 거 넣기
         cur = cur->right;
@@ -64,9 +65,11 @@ while (cur != t->nil) {
         pred = pred->right;
         }
         if (pred->right == t->nil) {
+        // 우측 자식 노드 cur로 연결
         pred->right = cur;
         cur = cur->left;
         } else {
+        // 우측 자식 노드 복원
         pred->right = t->nil;
         // 각주 대신 cur 배열에 push하는 거 넣기
         cur = cur->right;

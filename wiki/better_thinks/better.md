@@ -9,3 +9,5 @@
 [month1](month1.md)
 
 [C발 조심하세요](C_class1.md)
+
+[공지 2](note2.md)
