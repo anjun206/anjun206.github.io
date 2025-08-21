@@ -13,3 +13,11 @@
 [RBTree](learn/08_1/TIL_0814.md)
 
 [모리스 중위 순회](reviews/function_word/morris_traversal.md)
+
+# 7주차
+
+[dzm, zfod](reviews/week7_word/dzm,zfod.md)
+
+[메모리 할당 정책](reviews/week7_word/ma.md)
+
+[페이징](reviews/week7_word/paging.md)
