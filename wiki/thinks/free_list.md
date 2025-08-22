@@ -9,16 +9,17 @@
 
 명시적 가용~ [emoji](emoji:marie_see)
 
-암시적 가용~ [emoji](emoji:marie_scared)
+암시적 가용~ [emoji](emoji:marie_sit)
 
 <br>
 
-블록 이름들도 가용~ [emoji](emoji:marie_scared) 블록이다
+블록 이름들도 가용~ [emoji](emoji:marie_smile) 블록이다
 
 가긴 어딜가
 
-일루와잇!
+일루와잇! 
 
+[emoji](emoji:marie_scared)
 
 <br>
 
