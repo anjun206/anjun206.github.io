@@ -1,64 +1,82 @@
 <script>
-  // 1) Liquid로 YML을 JSON에 박아 넣기
+  // YML → JS
   window.EMOJI_MAP = {{ site.data.emojis | jsonify }};
 
   (function () {
-    function makeEmojiSpan(src, size, alt) {
+    // ✅ 기본값: 1.1em(살짝 크게), radius=0(둥글게 X)
+    var DEFAULT_SIZE = '1.1em';
+    var DEFAULT_RADIUS = '0';
+
+    function makeEmojiSpan(src, size, alt, radius) {
+      var s = size || DEFAULT_SIZE;
+      var r = (radius !== undefined && radius !== null && radius !== '') ? radius : DEFAULT_RADIUS;
+
       var span = document.createElement('span');
+      span.className = 'emoji';
       span.style.display = 'inline-block';
-      span.style.width = size || '1em';
-      span.style.height = size || '1em';
+      span.style.width = s;
+      span.style.height = s;
       span.style.verticalAlign = '-0.15em';
       span.style.overflow = 'hidden';
-      span.style.borderRadius = '0.15em';
+      span.style.borderRadius = r;
       span.style.lineHeight = '1';
+
       var img = new Image();
+      img.className = 'emoji-img';
       img.src = src;
       img.alt = alt || '';
       img.style.width = '100%';
       img.style.height = '100%';
       img.style.objectFit = 'cover';
       img.style.display = 'block';
+      img.style.isolation = 'auto';       // ✅ 헤더 위로 튀는 문제 해결
+
       span.appendChild(img);
       return span;
     }
 
+    // [emoji](emoji:name, size, radius) 까지 지원 (radius는 생략 가능)
     function parseSpec(specRaw) {
-      // "[emoji](emoji:marie_smile, 1.1em)" → "marie_smile, 1.1em"
       var spec = specRaw.replace(/^emoji:/, '');
-      var parts = spec.split(',').map(function (s) { return s.trim(); });
+      var parts = spec.split(',').map(function (s) { return s.trim(); }).filter(Boolean);
       return {
         nameOrUrl: parts[0],
-        size: parts[1] || '1em'
+        size: parts[1],       // '1.2em' 또는 '18px'
+        radius: parts[2]      // '0', '0.2em' (옵션)
       };
     }
 
     function upgradeEmojiLinks() {
-      // 권장 문법: [emoji](emoji:marie_smile, 1.1em)
+      // 권장 문법: [emoji](emoji:marie_smile, 1.1em, 0)
       var nodes = document.querySelectorAll('a[href^="emoji:"]');
       nodes.forEach(function (a) {
         var parsed = parseSpec(a.getAttribute('href'));
         var key = parsed.nameOrUrl;
-        var src = (window.EMOJI_MAP && window.EMOJI_MAP[key]) || key; // 이름 → URL 매핑, 없으면 URL로 간주
+        var src = (window.EMOJI_MAP && window.EMOJI_MAP[key]) || key;
         var alt = a.getAttribute('title') || key;
-        var span = makeEmojiSpan(src, parsed.size, alt);
+        var span = makeEmojiSpan(src, parsed.size, alt, parsed.radius);
         a.replaceWith(span);
       });
 
-      // 보너스: 사용자가 [emoji](marie_smile, 1.1em) 처럼 쓴 경우도 지원
+      // 접두사 없이 [emoji](marie_smile, 1.1em) 쓴 경우도 잡아줌
       var fallback = document.querySelectorAll('a:not([href^="http"]):not([href^="/"]):not([href^="#"])');
       fallback.forEach(function (a) {
         if ((a.textContent || '').trim().toLowerCase() === 'emoji') {
           var parts = a.getAttribute('href').split(',').map(function (s) { return s.trim(); });
           var key = parts[0];
-          var size = parts[1] || '1em';
+          var size = parts[1];
+          var radius = parts[2];
           var src = (window.EMOJI_MAP && window.EMOJI_MAP[key]) || key;
-          var span = makeEmojiSpan(src, size, key);
+          var span = makeEmojiSpan(src, size, key, radius);
           a.replaceWith(span);
         }
       });
     }
 
-    document.addEventListener('DOMContentLoaded', upgradeEmojiLinks);
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', upgradeEmojiLinks);
+    } else {
+      upgradeEmojiLinks();
+    }
   })();
 </script>
