@@ -1,7 +1,7 @@
 {% assign src    = include.src | default: site.data.emojis[include.name] %}
-{% assign size   = include.size   | default: "1em" %}        {# 텍스트 크기와 동일 #}
+{% assign size   = include.size   | default: "1em" %} 
 {% assign alt    = include.alt    | default: include.name | default: "" %}
-{% assign valign = include.valign | default: "-0.15em" %}    {# 베이스라인 보정 #}
+{% assign valign = include.valign | default: "-0.15em" %} 
 
 <span style="
   display:inline-block;
