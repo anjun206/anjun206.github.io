@@ -1,0 +1,64 @@
+<script>
+  // 1) Liquid로 YML을 JSON에 박아 넣기
+  window.EMOJI_MAP = {{ site.data.emojis | jsonify }};
+
+  (function () {
+    function makeEmojiSpan(src, size, alt) {
+      var span = document.createElement('span');
+      span.style.display = 'inline-block';
+      span.style.width = size || '1em';
+      span.style.height = size || '1em';
+      span.style.verticalAlign = '-0.15em';
+      span.style.overflow = 'hidden';
+      span.style.borderRadius = '0.15em';
+      span.style.lineHeight = '1';
+      var img = new Image();
+      img.src = src;
+      img.alt = alt || '';
+      img.style.width = '100%';
+      img.style.height = '100%';
+      img.style.objectFit = 'cover';
+      img.style.display = 'block';
+      span.appendChild(img);
+      return span;
+    }
+
+    function parseSpec(specRaw) {
+      // "[emoji](emoji:marie_smile, 1.1em)" → "marie_smile, 1.1em"
+      var spec = specRaw.replace(/^emoji:/, '');
+      var parts = spec.split(',').map(function (s) { return s.trim(); });
+      return {
+        nameOrUrl: parts[0],
+        size: parts[1] || '1em'
+      };
+    }
+
+    function upgradeEmojiLinks() {
+      // 권장 문법: [emoji](emoji:marie_smile, 1.1em)
+      var nodes = document.querySelectorAll('a[href^="emoji:"]');
+      nodes.forEach(function (a) {
+        var parsed = parseSpec(a.getAttribute('href'));
+        var key = parsed.nameOrUrl;
+        var src = (window.EMOJI_MAP && window.EMOJI_MAP[key]) || key; // 이름 → URL 매핑, 없으면 URL로 간주
+        var alt = a.getAttribute('title') || key;
+        var span = makeEmojiSpan(src, parsed.size, alt);
+        a.replaceWith(span);
+      });
+
+      // 보너스: 사용자가 [emoji](marie_smile, 1.1em) 처럼 쓴 경우도 지원
+      var fallback = document.querySelectorAll('a:not([href^="http"]):not([href^="/"]):not([href^="#"])');
+      fallback.forEach(function (a) {
+        if ((a.textContent || '').trim().toLowerCase() === 'emoji') {
+          var parts = a.getAttribute('href').split(',').map(function (s) { return s.trim(); });
+          var key = parts[0];
+          var size = parts[1] || '1em';
+          var src = (window.EMOJI_MAP && window.EMOJI_MAP[key]) || key;
+          var span = makeEmojiSpan(src, size, key);
+          a.replaceWith(span);
+        }
+      });
+    }
+
+    document.addEventListener('DOMContentLoaded', upgradeEmojiLinks);
+  })();
+</script>

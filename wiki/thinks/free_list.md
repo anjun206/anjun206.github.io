@@ -5,15 +5,15 @@
 <br>
 
 
-분리 가용~ {% include emoji.html name="marie_smile" %}
+분리 가용~ [emoji](emoji:marie_smile)
 
-명시적 가용~ {% include emoji.html name="marie_see" %}
+명시적 가용~ [emoji](emoji:marie_see)
 
-암시적 가용~ {% include emoji.html name="marie_sit" %}
+암시적 가용~ [emoji](emoji:marie_scared)
 
 <br>
 
-블록 이름들도 가용~ {% include emoji.html name="marie_scared" %} 블록이다
+블록 이름들도 가용~ [emoji](emoji:marie_scared) 블록이다
 
 가긴 어딜가
 
@@ -27,4 +27,8 @@
 
 흠...
 
-좀 피곤한 모양이다 잠깐 눈좀 붙여야 겠다
+좀 피곤한 모양이다 
+
+헛고리 그만하고
+
+잠깐 눈좀 붙여야 겠다
