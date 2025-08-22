@@ -1,0 +1,14 @@
+{% assign size   = include.size   | default: "1.25em" %}
+{% assign ratio  = include.ratio  | default: "1/1" %}
+{% assign radius = include.radius | default: "0.2em" %}
+{% assign class  = include.class  | default: "" %}
+
+{% assign src = include.src %}
+{% if src == nil and include.name %}
+  {% assign src = site.data.emojis[include.name] %}
+{% endif %}
+
+<span class="emoji emoji-[data-ar] {{ class }}"
+      style="width:{{ size }};height:{{ size }};--ar: {{ ratio }};border-radius:{{ radius }}">
+  <img src="{{ src }}" alt="{{ include.alt | default: include.name | default: '' }}">
+</span>
