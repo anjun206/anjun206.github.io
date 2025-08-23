@@ -1,24 +1,24 @@
 <script>
-  // YML → JS
+  // YML -> JS (이름 -> URL)
   window.EMOJI_MAP = {{ site.data.emojis | jsonify }};
 
   (function () {
-    // ✅ 기본값: 1.1em(살짝 크게), radius=0(둥글게 X)
-    var DEFAULT_SIZE = '1.1em';
-    var DEFAULT_RADIUS = '0';
+    // 🔧 프리셋 정의: 기본 크기/테두리
+    var PRESETS = {
+      emoji:  { size: '1.1em', radius: '0' },   // 기본
+      emoji2: { size: '8em', radius: '0' },  // 살짝 더 큼
+      emoji3: { size: '12em',  radius: '0' }   // 더 큼
+    };
 
     function makeEmojiSpan(src, size, alt, radius) {
-      var s = size || DEFAULT_SIZE;
-      var r = (radius !== undefined && radius !== null && radius !== '') ? radius : DEFAULT_RADIUS;
-
       var span = document.createElement('span');
       span.className = 'emoji';
       span.style.display = 'inline-block';
-      span.style.width = s;
-      span.style.height = s;
+      span.style.width = size;
+      span.style.height = size;
       span.style.verticalAlign = '-0.15em';
       span.style.overflow = 'hidden';
-      span.style.borderRadius = r;
+      span.style.borderRadius = radius || '0';
       span.style.lineHeight = '1';
 
       var img = new Image();
@@ -29,46 +29,53 @@
       img.style.height = '100%';
       img.style.objectFit = 'cover';
       img.style.display = 'block';
-      img.style.isolation = 'auto';       // ✅ 헤더 위로 튀는 문제 해결
+      img.style.isolation = 'auto'; // 헤더와 겹침 방지
 
       span.appendChild(img);
       return span;
     }
 
-    // [emoji](emoji:name, size, radius) 까지 지원 (radius는 생략 가능)
-    function parseSpec(specRaw) {
-      var spec = specRaw.replace(/^emoji:/, '');
-      var parts = spec.split(',').map(function (s) { return s.trim(); }).filter(Boolean);
+    // href/scheme에서 프리셋과 인자 파싱
+    // 예: emoji:marie_smile, 1.2em, 0.2em  (size, radius는 선택)
+    //     emoji2:marie_smile
+    function parseSpec(href, labelFallback) {
+      var m = href.match(/^(emoji\d*):(.+)$/i);
+      var scheme = (m ? m[1] : (labelFallback || 'emoji')).toLowerCase();
+      var specRaw = m ? m[2] : href;
+
+      var preset = PRESETS[scheme] || PRESETS.emoji;
+
+      var parts = specRaw.split(',').map(function (s) { return s.trim(); }).filter(Boolean);
       return {
         nameOrUrl: parts[0],
-        size: parts[1],       // '1.2em' 또는 '18px'
-        radius: parts[2]      // '0', '0.2em' (옵션)
+        size:   parts[1] || preset.size,
+        radius: parts[2] || preset.radius,
+        scheme: scheme
       };
     }
 
     function upgradeEmojiLinks() {
-      // 권장 문법: [emoji](emoji:marie_smile, 1.1em, 0)
-      var nodes = document.querySelectorAll('a[href^="emoji:"]');
+      // 1) 권장: href에 스킴 사용 (emoji:, emoji2:, emoji3:)
+      var nodes = document.querySelectorAll('a[href^="emoji"]');
       nodes.forEach(function (a) {
-        var parsed = parseSpec(a.getAttribute('href'));
+        var parsed = parseSpec(a.getAttribute('href'), (a.textContent || '').trim().toLowerCase());
         var key = parsed.nameOrUrl;
-        var src = (window.EMOJI_MAP && window.EMOJI_MAP[key]) || key;
+        var src = (window.EMOJI_MAP && window.EMOJI_MAP[key]) || key; // 이름 없으면 URL로 취급
         var alt = a.getAttribute('title') || key;
-        var span = makeEmojiSpan(src, parsed.size, alt, parsed.radius);
-        a.replaceWith(span);
+        a.replaceWith(makeEmojiSpan(src, parsed.size, alt, parsed.radius));
       });
 
-      // 접두사 없이 [emoji](marie_smile, 1.1em) 쓴 경우도 잡아줌
+      // 2) 보너스: [emoji2](marie_smile, 1.4em) 처럼 스킴 없이 쓴 경우
       var fallback = document.querySelectorAll('a:not([href^="http"]):not([href^="/"]):not([href^="#"])');
       fallback.forEach(function (a) {
-        if ((a.textContent || '').trim().toLowerCase() === 'emoji') {
-          var parts = a.getAttribute('href').split(',').map(function (s) { return s.trim(); });
+        var label = (a.textContent || '').trim().toLowerCase(); // emoji/emoji2/emoji3
+        if (PRESETS[label]) {
+          var parts = (a.getAttribute('href') || '').split(',').map(function (s) { return s.trim(); }).filter(Boolean);
           var key = parts[0];
-          var size = parts[1];
-          var radius = parts[2];
+          var size = parts[1] || PRESETS[label].size;
+          var radius = parts[2] || PRESETS[label].radius;
           var src = (window.EMOJI_MAP && window.EMOJI_MAP[key]) || key;
-          var span = makeEmojiSpan(src, size, key, radius);
-          a.replaceWith(span);
+          a.replaceWith(makeEmojiSpan(src, size, key, radius));
         }
       });
     }

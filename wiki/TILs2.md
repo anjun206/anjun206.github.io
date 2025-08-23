@@ -50,9 +50,13 @@
 
 [8월 22일 TIL - 오늘은 메모리 할당에 대해 알아볼 건데요](learn/08_1/TIL_0822.md)
 
-- [8월 22일 TIL - CsaxGPT 콜라보](learn/08_1/TIL_0822+.md)
+- [8월 22일 DLC 1 - CsaxGPT 콜라보](learn/08_1/TIL_0822+.md)
 
-- [8월 22일 TIL - 자러 가기전 마지막 탐색](learn/08_1/TIL_0822++.md)
+- [8월 22일 DLC 2 - 자러 가기전 마지막 탐색](learn/08_1/TIL_0822++.md)
+
+[8월 23일 TIL - malloc 3가지 방법으로 시도](learn/08_1/TIL_0823.md)
+
+- [8월 23일 DLC 1 - malloc 정답](learn/08_1/TIL_0823+.md)
 
 <br><br><br>
 
