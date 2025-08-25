@@ -58,6 +58,9 @@
 
 - [8월 23일 DLC 1 - malloc 정답](learn/08_1/TIL_0823+.md)
 
+[8월 24일 TIL](learn/08_1/TIL_0824.md)
+
+
 <br><br><br>
 
 
