@@ -41,3 +41,5 @@
 [의천도룡Git](muhyeop.md)
 
 [금방 가용~](free_list.md)
+
+[대기업 되는 법](big-tech.md)

@@ -60,6 +60,8 @@
 
 [8월 24일 TIL](learn/08_1/TIL_0824.md)
 
+[8월 25일 TIL - malloc 명시적 할당](learn/08_1/TIL_0825.md)
+
 
 <br><br><br>
 
