@@ -62,6 +62,11 @@
 
 [8월 25일 TIL - malloc 명시적 할당](learn/08_1/TIL_0825.md)
 
+[8월 26일 TIL - malloc 유레카](learn/08_1/TIL_0826.md)
+
+- [8월 26일 DLC 1 - C](learn/08_1/TIL_0826+.md)
+
+[8월 27일 TIL - malloc 마무리](learn/08_1/TIL_0827.md)
 
 <br><br><br>
 
