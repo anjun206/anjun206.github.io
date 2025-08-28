@@ -21,3 +21,11 @@
 [메모리 할당 정책](reviews/week7_word/ma.md)
 
 [페이징](reviews/week7_word/paging.md)
+
+# 8주차
+
+[DNS](reviews/week8_word/DNS.md)
+
+[프로토콜](reviews/week8_word/protocol.md)
+
+[소켓쌍](reviews/week8_word/socket_pair.md)

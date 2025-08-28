@@ -68,6 +68,9 @@
 
 [8월 27일 TIL - malloc 마무리](learn/08_1/TIL_0827.md)
 
+[8월 28일 TIL - 웹서버 새시작](learn/08_1/TIL_0828.md)
+
+
 <br><br><br>
 
 
