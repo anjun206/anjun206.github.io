@@ -29,3 +29,5 @@
 [프로토콜](reviews/week8_word/protocol.md)
 
 [소켓쌍](reviews/week8_word/socket_pair.md)
+
+[껍데기 구조체](reviews/week8_word/sockaddr.md)
