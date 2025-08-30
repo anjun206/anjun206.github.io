@@ -84,3 +84,4 @@
         - [11.4.7](learn/08_1/TIL_0829.md#1147-호스트와-서비스-변환-host-and-service-conversion)
         - [11.4.8](learn/08_1/TIL_0829.md#1148-소켓-인터페이스-헬퍼-함수-helper-functions-for-the-sockets-interface)
         - [11.4.9](learn/08_1/TIL_0829.md#1149-에코-클라이언트서버-예제-example-echo-client-and-server)
+    - [11.5](learn/08_1/TIL_0830+++.md)
