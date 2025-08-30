@@ -14,7 +14,7 @@
 → 보통 (출발 *IP:출발 포트*, 도착 *IP:도착 포트*)<br>
 = (local *IP:local port*, remote *IP:remote port*)
 
-그리고 소켓쌍은 **4튜플(4-tuple)**이라고도 하는데<br>
+그리고 소켓쌍은 **4튜플(4-tuple)** 이라고도 하는데<br>
 **(src IP, src port, dst IP, dst port)** 로 4개 들어있어서 그렇다
 
 여기다가 추가로 L4프로토콜을 넣어 UDP인지 TCP인지도 구분가능케 한다 **(5튜플)**<br>
