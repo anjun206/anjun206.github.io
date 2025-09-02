@@ -136,7 +136,7 @@ inc_after_meta :
 inc_before_scripts : 
 inc_after_scripts : "custom/mermaid.html"
 inc_before_styles : 
-inc_after_styles: custom/after_styles.html
+inc_after_styles: 
 inc_before_header : 
 inc_after_header : 
 inc_before_tail : 
