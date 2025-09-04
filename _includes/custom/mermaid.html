@@ -1,26 +1,25 @@
 <!-- _includes/mermaid.html -->
 <script type="module">
-  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10.9.4/dist/mermaid.esm.min.mjs';
+  // v11 고정
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11.3.0/dist/mermaid.esm.min.mjs';
 
-  // 1) 자동 렌더 끄고 설정만
+  // 자동 렌더 끄고 옵션만 설정
   mermaid.initialize({
     startOnLoad: false,
     securityLevel: 'loose'
   });
 
   document.addEventListener('DOMContentLoaded', () => {
-    // 2) ```mermaid 블록을 div.mermaid로 변환
+    // ```mermaid 블록을 div.mermaid로 변환
     document.querySelectorAll('pre code.language-mermaid').forEach((code) => {
       const pre = code.closest('pre');
       const div = document.createElement('div');
       div.className = 'mermaid';
-      // textContent 그대로 옮기되, 앞뒤 공백만 정리
       div.textContent = code.textContent.trim();
       pre.replaceWith(div);
     });
 
-    // 3) 변환된 요소를 직접 렌더
+    // 변환된 것 직접 렌더
     mermaid.run({ querySelector: '.mermaid' });
-    // 또는: mermaid.init(undefined, document.querySelectorAll('.mermaid'));
   });
 </script>
