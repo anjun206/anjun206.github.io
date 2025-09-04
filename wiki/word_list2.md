@@ -34,4 +34,8 @@
 
 # 9주차
 
-[프로세스, 스레드](reviews/week9_word/process&thread.md)
+[프로세스](reviews/week9_word/process.md)
+
+[스레드](reviews/week9_word/thread.md)
+
+[쿼터(quota)](reviews/week9_word/quota.md)

@@ -1,4 +1,5 @@
 - [메인](/main_page)
 - [TIL](/TILs)
-- [복습 단어](/review)
+- ~~[복습 단어](/review)~~
+- [복습 단어](word_list.md)
 - [정글 속 사유](/thinking)
