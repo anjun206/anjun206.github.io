@@ -79,6 +79,7 @@
 
 <br>
 
+{% raw %}
 ```mermaid
 ---
 config:
@@ -97,6 +98,7 @@ flowchart TD
     n3@{ shape: rounded}
     L_B_n1_0@{ animation: none }
 ```
+{% endraw %}
 
 >**Admit (Admission):** NEW → READY
 <br>
