@@ -31,3 +31,7 @@
 [소켓쌍](reviews/week8_word/socket_pair.md)
 
 [껍데기 구조체](reviews/week8_word/sockaddr.md)
+
+# 9주차
+
+[프로세스, 스레드](reviews/week9_word/process&thread.md)
