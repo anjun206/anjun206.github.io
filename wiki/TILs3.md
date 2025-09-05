@@ -14,3 +14,8 @@
 
 - [9월 4일 DLC - GitBook 동기화 정리](learn/09_1/TIL_0904+.md)
 
+[9월 5일 TIL - 프로젝트 1: Thread](learn/09_1/TIL_0905.md)
+
+- [9월 5일 DLC - Pintos의 메모리 할당](learn/09_1/TIL_0905+.md)
+
+- [9월 5일 DLC 2 - 알람시계 구현](learn/09_1/TIL_0905++.md)
