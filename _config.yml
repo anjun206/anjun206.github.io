@@ -97,6 +97,8 @@ defaults:
       layout: "git-wiki-blog"
 sass:
     style: compressed
+url: "https://anjun206.github.io"
+baseurl: ""
 plugins:
   - jekyll-avatar
   - jekyll-coffeescript
