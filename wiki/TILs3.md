@@ -20,8 +20,16 @@
 
 - [9월 5일 DLC 2 - 알람시계 구현](learn/09_1/TIL_0905++.md)
 
-[9월 6일 우선순위 구조체 만지기](learn/09_1/TIL_0906.md)
+[9월 6일 TIL - 우선순위 구조체 만지기](learn/09_1/TIL_0906.md)
 
 [9월 8일 TIL - 우선순위 스케줄링 완성](learn/09_1/TIL_0908.md)
 
 - [9월 8일 DLC - MLFQS](learn/09_1/TIL_0908+.md)
+
+[9월 9일 TIL - MLFQS 트라이](learn/09_1/TIL_0909.md)
+
+[9월 10일 TIL - MLFQS 흐름 정리](learn/09_1/TIL_0910.md)
+
+- [9월 10일 TIL - 내가 MLFQS를 성공 할리가 없잖아, 무리무리! (※무리가 아니였다?!)](learn/09_1/TIL_0910+.md)
+
+- [9월 10일 DLC 2 - fk 트러블 슈팅](learn/09_1/TIL_0910++.md)
