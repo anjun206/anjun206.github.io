@@ -21,3 +21,5 @@ Pintos에 대해 기록해 놓았다
 [가상 환경](learn/09_1/TIL_0911+.md)
 
 [인자 전달 (argument passing)](learn/09_1/TIL_0911+++.md)
+
+- [인자 쪼개기 참고 함수 코드](learn/09_1/TIL_0911++++.md)
