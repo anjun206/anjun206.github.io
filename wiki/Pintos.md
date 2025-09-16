@@ -41,3 +41,5 @@ Pintos에 대해 기록해 놓았다
 [시스템 콜 구현 1](learn/09_1/TIL_0915.md)
 
 [시스템 콜 구현 2](learn/09_1/TIL_0915+.md)
+
+[fork 간단 흐름](learn/09_1/TIL_0916.md)
