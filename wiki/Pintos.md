@@ -45,3 +45,9 @@ Pintos에 대해 기록해 놓았다
 [fork 간단 흐름](learn/09_1/TIL_0916.md)
 
 [extra과제 dup2와 stdin/stdout](learn/09_1/TIL_0917+.md)
+
+[핵심 구현 fork와 dup2 정리](learn/09_1/TIL_0922.md)
+
+[프로젝트 3 찍먹](learn/09_1/TIL_0920.md)
+
+[프로젝트 3 가상주소 헬퍼?](learn/09_1/TIL_0920+.md)
