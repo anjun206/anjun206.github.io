@@ -4,3 +4,4 @@ gem 'github-pages', group: :jekyll_plugins
 gem "jekyll-gitlab-metadata" # for cross compatibility
 gem "jekyll-footnotes"
 gem "jekyll-sitemap"
+gem "faraday-retry"
