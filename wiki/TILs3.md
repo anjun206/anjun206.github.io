@@ -105,3 +105,5 @@
 - [9월 29일 DLC - 보이저 엑스 채용 특강](learn/09_1/TIL_0929+.md)
 
 - [9월 29일 DLC 2 - vm 구조체 정리](learn/09_1/TIL_0929++.md)
+
+[9월 30일 TIL - destroy 계열 함수 구현](learn/09_1/TIL_0930.md)
