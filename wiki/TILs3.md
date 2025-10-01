@@ -1,6 +1,6 @@
 [9월 1일 TIL - tiny서버에 대해서 (ㄹㅇ 개빡세게 함)](learn/09_1/TIL_0901.md)
 
-- [9월 1일 DLC - tiny서버 과제에 대해 (이-지 하다)](learn/09_1/TIL_0901.md)
+- [9월 1일 DLC - tiny서버 과제에 대해 (이-지 하다)](learn/09_1/TIL_0901+.md)
 
 [9월 2일 TIL - csapp 과제 구현](learn/09_1/TIL_0902.md)
 
@@ -107,3 +107,5 @@
 - [9월 29일 DLC 2 - vm 구조체 정리](learn/09_1/TIL_0929++.md)
 
 [9월 30일 TIL - destroy 계열 함수 구현](learn/09_1/TIL_0930.md)
+
+[10월로](TILs4.md)
