@@ -1,6 +1,6 @@
 [7월 11일 그날의 기억](learn/TIL_0711.md)
- - [7월 11일 DLC 1](learn/TIL_0711+.md)
- - [7월 11일 DLC 2](learn/TIL_0711++.md)
+- [7월 11일 DLC 1](learn/TIL_0711+.md)
+- [7월 11일 DLC 2](learn/TIL_0711++.md)
 
 [7월 12일 TIL](learn/TIL_0712.md)
 
@@ -19,7 +19,6 @@
 [7월 17일 TIL](learn/TIL_0717.md)
 - [7월 17일 DLC 1 : *교내* 초절정 미소녀를 다루는 법](learn/TIL_0717+.md)
 - [7월 17일 DLC 2 : 덱에서 원하는 카드를 뽑는법.markdown](learn/TIL_0717++.md)
-
 
 [7월 18일 TIL](learn/TIL_0718.md)
 - [7월 18일 DLC 1 : 스테이지에서 강사와 함께.avi](learn/TIL_0718+.md)
@@ -60,11 +59,16 @@
 
 [7월 30일 TIL](learn/TIL_0730.md)
 
+[키워드 정리](learn/TIL_0731.md)
+
 <br>
 
-## [8월달로](TILs2.md)
-
-## [9월달로](TILs3.md)
+### 2024년
+- [8월달로](TILs2.md)
+- [9월달로](TILs3.md)
+- [10월달로](TILs4.md)
+- [11월달로](TILs5.md)
+- [12월달로](TILs6.md)
 
 <br><br><br>
 
